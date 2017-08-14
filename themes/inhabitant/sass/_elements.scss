@@ -5,6 +5,39 @@
 html {
 	box-sizing: border-box;
 	@include font-size(1);
+	width: $width;
+	margin: 0 auto;
+}
+
+p.site-description {
+	display: none;
+}
+
+.home, .page {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	width: $width;
+	border: 1px solid $color__border;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #404040;
+	line-height: 1.75em;
+	background-color: $color__background-screen;
+}
+
+
+div.menu-main-menu-container {
+	position: absolute;
+	right: 0;
+	width: $width;
+	z-index: 1;
+}
+
+#primary-menu.menu {
+	position: relative;
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	flex-direction: row-reverse;
 }
 
 *,
@@ -12,18 +45,6 @@ html {
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
-
-.home {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-	width: 1120px;
-	border: 1px solid #e1e1e1;
-	margin: 0 auto;
-	font-size: 16px;
-	color: #404040;
-	line-height: 1.75em;
-	background-color: #fff;
-}
-
 blockquote, q {
 	quotes: "" "";
 
