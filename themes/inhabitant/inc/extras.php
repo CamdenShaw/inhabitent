@@ -24,7 +24,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 //Change the logo on the WP login screen to be Inhabitent's logo
 function inhabitent_login_logo() {
 	echo '<style type="text/css">
-#login h1 a, .login h1 a {background-image:url(wp-content/themes/inhabitant/images/inhabitent-logo-text-dark.svg) ; margin:0 auto; background-size: 100% ; width: 100%;}
+#login h1 a, .login h1 a {background-image:url(wp-content/themes/inhabitant/assets/images/inhabitent-logo-text-dark.svg) ; margin:0 auto; background-size: 100% ; width: 100%;}
 </style>';
 }
 add_filter( 'login_head', 'inhabitent_login_logo' );
