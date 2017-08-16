@@ -153,9 +153,9 @@ class Tent_Biz_Hours extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$title = strip_tags( $instance['monday_friday'] );
-		$title = strip_tags( $instance['saturday'] );
-		$title = strip_tags( $instance['sunday'] );
+		$monday_friday = strip_tags( $instance['monday_friday'] );
+		$saturday = strip_tags( $instance['saturday'] );
+		$sunday = strip_tags( $instance['sunday'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

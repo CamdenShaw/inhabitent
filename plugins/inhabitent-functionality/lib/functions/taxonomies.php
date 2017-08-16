@@ -41,7 +41,7 @@ function inhabitent_taxonomy_prod_type() {
       'show_tagcloud'              => true,
       'show_in_rest'               => true,
     );
-    register_taxonomy( 'product', array( 'product' ), $args );
+    register_taxonomy( 'product-type', array( 'product' ), $args );
   
   }
   add_action( 'init', 'inhabitent_taxonomy_prod_type', 0 );
