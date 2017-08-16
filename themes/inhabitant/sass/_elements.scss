@@ -27,17 +27,55 @@ p.site-description {
 
 div.menu-main-menu-container {
 	position: absolute;
-	right: 0;
 	width: $width;
 	z-index: 1;
+	margin: 0 auto;
 }
 
 #primary-menu.menu {
 	position: relative;
 	display: flex;
-	width: 50%;
-	justify-content: space-between;
-	flex-direction: row-reverse;
+	width: 920px;
+	margin: 0 auto;
+	justify-content: flex-end;
+	flex-direction: row;
+	text-transform: uppercase;
+	a:link {
+		color: $color__border;
+	}
+	a:hover {
+		color: lighten($color__link-hover, 35%);
+	}
+	a:active {
+		color: $color__link;
+	}
+	a:visited {
+		color: lighten($color__link-visited, 20%);
+	}
+}
+
+li.menu-item {
+	padding: 10px;
+}
+
+h1.entry-title {
+	text-transform: uppercase;
+	font-size: 250%;
+	text-align: center;
+	transform: translateY(50vh);
+	color: white;
+}
+
+div.entry-content {
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+	width: 63%;
+	margin: 0 auto;
+	}
+	margin: 30px auto;
 }
 
 *,

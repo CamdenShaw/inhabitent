@@ -41,7 +41,7 @@ function inhabitent_login_title() {
 }
 add_filter( 'login_headertitle', 'inhabitent_login_title');
 
-function inhabitent_dynamic_css() {
+function inhabitent_about_dynamic_css() {
 	if( ! is_page_template( 'page-templates/about.php' )) {
 		return;
 	}
@@ -52,8 +52,32 @@ function inhabitent_dynamic_css() {
 	$hero_css = ".page-template-about .entry-header {
 		background:
 		linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100% ), url({$image}) no-repeat center bottom;
+		height: 100vh;
 		background-size: cover, cover;
+		margin: -29px auto 0;
 	}";
 	wp_add_inline_style( 'tent-style', $hero_css );
 }
-add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_dynamic_css' );
+
+function inhabitent_front_page_dynamic_css() {
+	if( ! is_page_template( 'page-templates/front_page.php' )) {
+		return;
+	}
+	$image = CFS()->get( 'f_p_header_image' );
+	if ( ! $image ) {
+		return;
+	}
+	$logo = CFS()->get( 'f_p_header_logo');
+	$hero_css = ".page-template-front_page .front-page-header {
+		background: url('./wp-content/themes/inhabitant/assets/images/inhabitent-logo-full.svg') no-repeat center center,
+		linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100% ), url({$image}) no-repeat center bottom;
+		height: 100vh;
+		background-size: 25%, cover, cover;
+		margin: -29px auto 0;
+	}";
+	wp_add_inline_style( 'tent-style', $hero_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_front_page_dynamic_css' );
+
+?>
