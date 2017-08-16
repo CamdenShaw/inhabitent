@@ -74,7 +74,7 @@ function inhabitent_front_page_dynamic_css() {
 		linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100% ), url({$image}) no-repeat center bottom;
 		height: 100vh;
 		background-size: 25%, cover, cover;
-		margin: -29px auto 0;
+		margin: 0 auto;
 	}";
 	wp_add_inline_style( 'tent-style', $hero_css );
 }
