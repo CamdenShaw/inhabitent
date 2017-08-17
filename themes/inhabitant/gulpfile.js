@@ -33,7 +33,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('scripts', ['lint'], function () {
-    gulp.src('./js/*.js')
+    gulp.src('./src/*.js')
         .pipe(uglify())
         .pipe(rename({
             extname: '.min.js'
@@ -42,7 +42,7 @@ gulp.task('scripts', ['lint'], function () {
 });
 
 gulp.task('lint', function () {
-    return gulp.src(['./js/*.js'])
+    return gulp.src(['./src/*.js'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());

@@ -7,6 +7,37 @@
  * @package RED_Starter_Theme
  */
 
+
+function red_scripts() {
+	$script_url = get_template_directory_uri() . '/js/api.js';
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
+ wp_localize_script( 'red_comments', 'red_vars', array(
+		 'ajax_url' => admin_url( 'admin-ajax.php' ),
+		 'comment_nonce' => wp_create_nonce( 'red_comment_status' ),
+		 'post_id' => get_the_ID()
+ ) );
+}
+add_action( 'wp_enqueue_scripts', 'red_scripts' );
+
+function red_comment_ajax() {
+	check_ajax_referer( 'red_comment_status', 'security' );
+	if ( ! current_user_can( 'edit_posts' ) ) {
+		 exit;
+	}
+	$id = $_POST['the_post_id'];
+	if ( isset( $id ) && is_numeric( $id ) ) {
+		 $the_post = array(
+				'ID' => $id,
+				'comment_status' => 'closed'
+		 );
+		 wp_update_post( $the_post );
+	}
+	exit;
+}
+add_action( 'wp_ajax_red_comment_ajax', 'red_comment_ajax' );
+// add_action( 'wp_ajax_nopriv_red_comment_ajax', 'red_comment_ajax' );
+
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
