@@ -34,12 +34,14 @@ div.menu-main-menu-container {
 
 #primary-menu.menu {
 	position: relative;
+	padding: 0 60px 0;
 	display: flex;
-	width: 920px;
-	margin: 0 auto;
+	width: $width;
+	margin: -1px auto 0;
 	justify-content: flex-end;
 	flex-direction: row;
 	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.5);
 	a:visited {
 		color: $color__green-brand;
 	}

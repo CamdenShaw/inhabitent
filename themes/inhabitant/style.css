@@ -362,11 +362,12 @@ div.menu-main-menu-container {
 
 #primary-menu.menu {
   position: relative;
+  padding: 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 920px;
-  margin: 0 auto;
+  width: 1120px;
+  margin: -1px auto 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -374,7 +375,8 @@ div.menu-main-menu-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5); }
   #primary-menu.menu a:visited {
     color: #248A83; }
   #primary-menu.menu a:visited:hover {
@@ -603,12 +605,21 @@ a {
 
 /* Menus */
 #menu-item-217 {
-  content: url("../../assets/images/inhabitent-logo-tent-white.svg");
-  width: 75px;
-  height: 75px;
-  left: 0;
-  -webkit-transform: translate(-575px, -20px);
-          transform: translate(-575px, -20px); }
+  width: 100px; }
+  #menu-item-217 a {
+    background-image: url("../../assets/images/inhabitent-logo-tent-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 30px;
+    left: 0;
+    -webkit-transform: translate(-595px, -1px);
+            transform: translate(-595px, -1px);
+    color: transparent; }
+    #menu-item-217 a:hover {
+      background-color: rgba(25, 25, 112, 0.3);
+      border-radius: 49%; }
 
 .main-navigation {
   clear: both;
