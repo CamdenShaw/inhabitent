@@ -23,20 +23,26 @@ get_header(); ?>
 						if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 							echo '<ul>';
 							foreach ( $terms as $term ) {
-								echo '<li> <a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';
+								echo '<li class="stuff"> <a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';
 							}
 							echo '</ul>';
 					} ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
 
-			<?php endwhile; ?>
+			<div class='products-wrapper'>
+
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php
+						get_template_part( 'template-parts/content' );
+					?>
+
+				<?php endwhile; ?>
+
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
