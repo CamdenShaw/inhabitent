@@ -17,16 +17,19 @@ get_header(); ?>
 				</header>
 			</article>
 
-			<div class "shop-stuff">
+			<div class="shop-stuff">
 				<?php
 					$terms = get_terms( 'product-type' );
 						if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 							echo '<ul>';
 							foreach ( $terms as $term ) {
-									echo '<li> <a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff </a><p>' . $term->description . '</p></li>';
+								echo '<li><img class="' . $term->slug . '" src="./wp-content/themes/inhabitant/assets/images/' . $term->slug . '.svg">';
+								echo '<p>' . $term->description . '</p> <a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff </a></li>';
 							}
 							echo '</ul>';
-					} ?>
+					}
+				?>
+			</div>
 
 			<div class "most-recent-journal">
 				<?php ?>
@@ -35,8 +38,9 @@ get_header(); ?>
 					$journal_posts = get_posts( $args );
 				?>
 
-				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 				<div class='journal-recent-block-item'>
+					<h2 class='journal-title-fp'>Inhabitent Journal</h2>
+					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 					<div class='journal-thumbnail-wrapper'>
 						<?php if (has_post_thumbnail()) : ?>
 							<?php the_post_thumbnail('medium' ); ?>
@@ -48,9 +52,9 @@ get_header(); ?>
 				</div>
 				<p><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?> </a> </p>
 				<p><a href="<? echo get_post_permalink() ?>">Read Entry</a> </p>
-			</div>
 
 			<?php endforeach; wp_reset_postdata(); ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

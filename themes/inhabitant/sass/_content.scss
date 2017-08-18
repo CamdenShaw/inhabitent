@@ -31,6 +31,47 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.shop-stuff {
+	width: auto;
+	height: auto;
+	display: flex;
+	ul {
+		display: flex;
+		width: $width;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 40px;
+		li {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width:260px;
+			border: 1px $color__border solid;
+			border-top: 5px $color__border solid;
+			padding: 10px;
+			&:first-child {
+				margin-left: 5px;
+			}
+			&:last-child {
+				margin-right: 5px
+			}
+			&:hover {
+				border-color: darken($color__yellow-brand, 20%);
+			}
+			img {
+				width: 70px;
+				height: 70px;
+			}
+			p {
+				text-align: center;
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
