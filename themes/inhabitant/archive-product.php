@@ -14,7 +14,11 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					add_filter( 'get_the_archive_title', 'modify_archive_title', 10, 1 );
+					function modify_archive_title( $title ) {
+						return '<h1 class="page-title">Shop Stuff</h1>';
+					}
+					the_archive_title();
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
@@ -30,7 +34,6 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-
 
 			<div class='products-wrapper'>
 

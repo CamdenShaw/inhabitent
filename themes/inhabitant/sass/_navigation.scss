@@ -4,11 +4,13 @@
 
 /* Links */
 
+a:link {
+	color: $color__green-brand;
+}
 a {
-	color: $color__link;
-
+	color: $color__green-brand;
 	&:visited {
-		color: $color__link-visited;
+		color: $color__green-brand;
 	}
 	&:hover,
 	&:focus,
@@ -25,6 +27,14 @@ a {
 }
 
 /* Menus */
+
+#menu-item-217 {
+	content: url('../../assets/images/inhabitent-logo-tent-white.svg');
+	width: 75px;
+	height: 75px;
+	left: 0;
+	transform: translate(-575px, -20px);
+}
 
 .main-navigation {
 	clear: both;

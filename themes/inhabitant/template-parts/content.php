@@ -7,7 +7,7 @@
 
 ?>
 
-<?php if ( is_archive( 'archive-product' ) ) : ?>
+<?php if ( is_archive( 'archive-product' ) || is_archive( 'taxonomy-product-type' ) ) : ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<?php if ( has_post_thumbnail() ) : ?>
