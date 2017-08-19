@@ -17,6 +17,7 @@ get_header(); ?>
 				</header>
 			</article>
 
+			<h4 class="fp-shop-title">Shop Stuff</h4>
 			<div class="shop-stuff">
 				<?php
 					$terms = get_terms( 'product-type' );
@@ -59,10 +60,8 @@ get_header(); ?>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	<div class='adventures-container'>
+			<h2 class="adventures-title">Latest Adventures</h2>
+			<div class='adventures-container'>
 				<div class='adventures-img1-container'>
 					<div class='adventures-img1'>
 						<h3 class='nature'>Getting Back to Nature in a Canoe</h3>
@@ -90,5 +89,6 @@ get_header(); ?>
 				<a href=''>More Adventures</a>
 			</div>
 
-<?php get_sidebar(); ?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 <?php get_footer(); ?>
