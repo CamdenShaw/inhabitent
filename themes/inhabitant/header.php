@@ -28,8 +28,10 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-			?>
+					<div id="primary-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-container' ) );
+					echo '<a class="icon-search"> <i class="fa fa-search" aria-hidden="true"></i></a>';
+					echo get_search_form();
+			?></div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 			<div id="content" class="site-content">

@@ -31,29 +31,32 @@ get_header(); ?>
 				?>
 			</div>
 
-			<div class "most-recent-journal">
-				<?php ?>
-				<?php 
-					$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => '3', 'orderby' => 'date' );
-					$journal_posts = get_posts( $args );
-				?>
+		
+			<?php ?>
+			<?php 
+				$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => '3', 'orderby' => 'date' );
+				$journal_posts = get_posts( $args );
+			?>
 
-				<div class='journal-recent-block-item'>
-					<h2 class='journal-title-fp'>Inhabitent Journal</h2>
-					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-					<div class='journal-thumbnail-wrapper'>
-						<?php if (has_post_thumbnail()) : ?>
-							<?php the_post_thumbnail('medium' ); ?>
-						<?php endif; ?>
+			<h2 class='journal-title-fp'>Inhabitent Journal</h2>
+			<div class="most-recent-journal">
+				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+					<div class='journal-recent-block-item'>
+						<div class='journal-thumbnail-wrapper'>
+							<?php if (has_post_thumbnail()) : ?>
+								<?php the_post_thumbnail('medium' ); ?>
+							<?php endif; ?>
+						</div>
+						<div class="words-wrapper">
+							<div class='entry-meta'>
+								<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 comments', '1 Comment', '% Comment' ); ?>
+							</div>
+							<h3 class="blog-post-title"><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?> </a> </h3>
+							<p class="read-more-link"><a href="<? echo get_post_permalink() ?>">Read Entry</a> </p>
+						</div>
 					</div>
-				</div>
-				<div class='entry-meta'>
-					<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 comments', '1 Comment', '% Comment' ); ?> / <?php inhabitent_posted_by(); ?>
-				</div>
-				<p><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?> </a> </p>
-				<p><a href="<? echo get_post_permalink() ?>">Read Entry</a> </p>
 
-			<?php endforeach; wp_reset_postdata(); ?>
+				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 
 		</main><!-- #main -->

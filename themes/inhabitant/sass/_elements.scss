@@ -24,35 +24,6 @@ p.site-description {
 	background-color: $color__background-screen;
 }
  
-
-div.menu-main-menu-container {
-	position: fixed;
-	width: $width;
-	z-index: 1;
-	margin: 0 auto;
-}
-
-#primary-menu.menu {
-	position: relative;
-	padding: 0 60px 0;
-	display: flex;
-	width: $width;
-	margin: -1px auto 0;
-	justify-content: flex-end;
-	flex-direction: row;
-	text-transform: uppercase;
-	background-color: rgba(255,255,255,0.5);
-	a:visited {
-		color: $color__green-brand;
-	}
-	a:visited:hover {
-		color: $color__link-hover;
-	}
-	li.menu-item {
-		padding: 10px;
-	}
-}
-
 h1.entry-title {
 	text-transform: uppercase;
 	font-size: 250%;

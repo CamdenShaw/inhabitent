@@ -31,6 +31,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
+//front page
 .shop-stuff {
 	width: auto;
 	height: auto;
@@ -68,7 +69,94 @@
 				text-align: center;
 				font-size: 1.2em;
 			}
+			a {
+				color: white;
+				padding: 6px 22px;
+				text-transform: uppercase;
+				background-color: $color__green-brand;
+				&:link {
+					text-decoration: none;
+				}
+				&:visited {
+					color: white;
+				}
+				&:hover {
+					background-color: darken($color__green-brand, 20%);
+				}
+			} 
 		}
+	}
+}
+
+div.most-recent-journal {
+	width: $width;
+	display: flex;
+	justify-content: space-between;
+	.journal-recent-block-item {
+		display: flex;
+		flex-direction: column;
+		border: 1px $color__border solid;
+		width: 360px;
+		img {
+			width: 360px;
+			height: 250px;
+			object-fit: cover;
+			border-bottom: 5px $color__border solid;
+		}
+	}
+}
+
+div.words-wrapper {
+	padding: 10px;
+	.entry-meta {
+		font-size: 0.9em;
+	}
+	.blog-post-title {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		a:link {
+			text-decoration: none;
+		}
+	}
+	.read-more-link {
+		border: 1px black solid;
+		width:146px;
+		a {
+			padding: 6px 22px;
+			text-transform: uppercase;
+			&:link {
+				color: black;
+				text-decoration: none;
+			}
+			&:visited {
+				color: black;
+			}
+		} 
+		&:hover {
+			a {
+				color: white;
+			}
+			background-color: $color__green-brand;
+			border: 1px $color__m-grey-brand solid;
+		}
+	}
+}
+
+//shop page
+.products-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: $width;
+	height: 100%;
+	flex-flow: row-reverse wrap-reverse;
+	flex-basis: 800px;
+	margin:0;
+	img {
+		object-fit: cover;
+		height: 253px;
+		border-bottom: 5px $color__border solid;
 	}
 }
 
@@ -86,20 +174,4 @@
 }
 .bypostauthor {
 	display: block;
-}
-
-.products-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: $width;
-	height: 100%;
-	flex-flow: row-reverse wrap-reverse;
-	flex-basis: 800px;
-	margin:0;
-	img {
-		object-fit: cover;
-		height: 253px;
-		border-bottom: 5px $color__border solid;
-	}
 }

@@ -354,36 +354,6 @@ p.site-description {
   line-height: 1.75em;
   background-color: #f1f1f1; }
 
-div.menu-main-menu-container {
-  position: fixed;
-  width: 1120px;
-  z-index: 1;
-  margin: 0 auto; }
-
-#primary-menu.menu {
-  position: relative;
-  padding: 0 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1120px;
-  margin: -1px auto 0;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.5); }
-  #primary-menu.menu a:visited {
-    color: #248A83; }
-  #primary-menu.menu a:visited:hover {
-    color: midnightblue; }
-  #primary-menu.menu li.menu-item {
-    padding: 10px; }
-
 h1.entry-title {
   text-transform: uppercase;
   font-size: 250%;
@@ -604,22 +574,89 @@ a {
     outline: 0; }
 
 /* Menus */
-#menu-item-217 {
-  width: 100px; }
-  #menu-item-217 a {
-    background-image: url("../../assets/images/inhabitent-logo-tent-white.svg");
+.menu-item {
+  padding: 10px; }
+
+#primary-menu {
+  position: fixed;
+  width: 1120px;
+  z-index: 1;
+  padding: 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: -1px auto 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px #e1e1e1 solid; }
+  #primary-menu a:visited {
+    color: #248A83; }
+  #primary-menu a:visited:hover {
+    color: midnightblue; }
+  #primary-menu .fa-search {
+    padding: 14px;
+    color: #248A83; }
+    #primary-menu .fa-search:hover {
+      color: midnightblue; }
+  #primary-menu .search-form {
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
+    #primary-menu .search-form .search-submit {
+      display: none; }
+    #primary-menu .search-form fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0; }
+      #primary-menu .search-form fieldset input {
+        background-color: transparent;
+        border: 0;
+        padding: 12px; }
+        #primary-menu .search-form fieldset input:focus {
+          outline: none; }
+  #primary-menu .search-form-click {
+    -webkit-transition: 1s;
+    transition: 1s;
+    width: 100px; }
+
+.menu-item-217 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 100px;
+  padding-right: 676px; }
+  .menu-item-217 a {
+    background-image: url("../../assets/images/inhabitent-logo-tent.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
     height: 30px;
     left: 0;
-    -webkit-transform: translate(-595px, -1px);
-            transform: translate(-595px, -1px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
     color: transparent; }
-    #menu-item-217 a:hover {
+    .menu-item-217 a:hover {
       background-color: rgba(25, 25, 112, 0.3);
       border-radius: 49%; }
+
+.menu-item-217-click {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 0px;
+  padding-right: 576px; }
 
 .main-navigation {
   clear: both;
@@ -830,18 +867,69 @@ a {
       .shop-stuff ul li p {
         text-align: center;
         font-size: 1.2em; }
+      .shop-stuff ul li a {
+        color: white;
+        padding: 6px 22px;
+        text-transform: uppercase;
+        background-color: #248A83; }
+        .shop-stuff ul li a:link {
+          text-decoration: none; }
+        .shop-stuff ul li a:visited {
+          color: white; }
+        .shop-stuff ul li a:hover {
+          background-color: #0f3936; }
 
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
+div.most-recent-journal {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  div.most-recent-journal .journal-recent-block-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px #e1e1e1 solid;
+    width: 360px; }
+    div.most-recent-journal .journal-recent-block-item img {
+      width: 360px;
+      height: 250px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-bottom: 5px #e1e1e1 solid; }
 
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
+div.words-wrapper {
+  padding: 10px; }
+  div.words-wrapper .entry-meta {
+    font-size: 0.9em; }
+  div.words-wrapper .blog-post-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5em; }
+    div.words-wrapper .blog-post-title a:link {
+      text-decoration: none; }
+  div.words-wrapper .read-more-link {
+    border: 1px black solid;
+    width: 146px; }
+    div.words-wrapper .read-more-link a {
+      padding: 6px 22px;
+      text-transform: uppercase; }
+      div.words-wrapper .read-more-link a:link {
+        color: black;
+        text-decoration: none; }
+      div.words-wrapper .read-more-link a:visited {
+        color: black; }
+    div.words-wrapper .read-more-link:hover {
+      background-color: #248A83;
+      border: 1px #808080 solid; }
+      div.words-wrapper .read-more-link:hover a {
+        color: white; }
 
 .products-wrapper {
   display: -webkit-box;
@@ -867,6 +955,18 @@ a {
        object-fit: cover;
     height: 253px;
     border-bottom: 5px #e1e1e1 solid; }
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
 
 /*--------------------------------------------------------------
 # Media
