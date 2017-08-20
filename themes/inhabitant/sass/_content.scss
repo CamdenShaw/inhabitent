@@ -424,6 +424,18 @@ div.site-info a {
 
 .comment-body {
 	display: flex;
+	margin: 40px 0;
+	border-bottom: 1px $color__border solid;
+	p{
+		margin: 0;
+	}
+}
+
+.comments-title {
+	padding-top: 80px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2.2rem;
 }
 
 .comment-author-avatar {
@@ -435,9 +447,23 @@ div.site-info a {
 
 .comment-author {
 	font-weight: bold;
-	text-transform: uppercase;
-	font-weight: 2rem;
 	.fn {
 		font-style: normal;
 	}
 }
+
+.comment-metadata {
+	color: $color__m-grey-brand;
+	font-family: Merriweather;
+	
+	a {
+		color: $color__m-grey-brand;
+		&:hover {
+			color: $color__m-grey-brand;
+		}
+		&:visited:hover {
+			color: $color__m-grey-brand;
+		}
+	}
+}
+

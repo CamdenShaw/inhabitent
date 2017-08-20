@@ -11,7 +11,6 @@ plugins/*
 !plugins/biz-hours-widget/
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!../wp-includes/comment-templates.php
 !themes/inhabitant/
 # Ignore packages #
 themes/inhabitant/node_modules/

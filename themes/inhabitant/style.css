@@ -1269,7 +1269,17 @@ div.site-info a {
 .comment-body {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 40px 0;
+  border-bottom: 1px #e1e1e1 solid; }
+  .comment-body p {
+    margin: 0; }
+
+.comments-title {
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2.2rem; }
 
 .comment-author-avatar {
   padding-right: 40px; }
@@ -1277,11 +1287,19 @@ div.site-info a {
     border-radius: 49%; }
 
 .comment-author {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-weight: 2rem; }
+  font-weight: bold; }
   .comment-author .fn {
     font-style: normal; }
+
+.comment-metadata {
+  color: #808080;
+  font-family: Merriweather; }
+  .comment-metadata a {
+    color: #808080; }
+    .comment-metadata a:hover {
+      color: #808080; }
+    .comment-metadata a:visited:hover {
+      color: #808080; }
 
 /*--------------------------------------------------------------
 # Media
