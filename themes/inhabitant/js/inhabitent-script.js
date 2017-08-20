@@ -14,4 +14,12 @@
 		});
 	}
 
+	$(document).ready(function() {
+	let x = $( '.content-area' ).height();
+	console.log(x);
+	$('.side-widget-area').css({
+    height: `${x}px`,
+	});
+});
+
 })(jQuery);

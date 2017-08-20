@@ -7,6 +7,10 @@ html {
 	@include font-size(1);
 	width: $width;
 	margin: 0 auto;
+	height: 100%;
+}
+body {
+	height: 100%;
 }
 
 p.site-description {
@@ -30,18 +34,6 @@ h1.entry-title {
 	text-align: center;
 	transform: translateY(50vh);
 	color: white;
-}
-
-div.entry-content {
-	h2 {
-		text-align: center;
-		text-transform: uppercase;
-	}
-	p {
-	width: 63%;
-	margin: 0 auto;
-	}
-	margin: 30px auto;
 }
 
 *,
@@ -118,13 +110,13 @@ body.archive {
 			border-bottom: 1px $color__border dashed;
 		}
 
-	h1.page-title {
-		text-align: center;
-		padding-top: 100px;
-		text-transform: uppercase;
-		font-size: 2.6em;
-		margin-top:0;
-	}
+		h1.page-title {
+			text-align: center;
+			padding-top: 100px;
+			text-transform: uppercase;
+			font-size: 2.6em;
+			margin-top:0;
+		}
 	}
 }
 
@@ -187,5 +179,85 @@ article.type-product {
 }
 
 .side-widget-area {
-	position: right 0 0;
+	border-left: 1px $color__border solid;
+	float: right;
+	position: relative;
+	width: 300px;
+	padding: 40px 60px 0;
+	top:50px;
+	z-index: -1;
+}
+
+.site-footer {
+	background-image: url('../../assets/images/footer/dark-wood@2x.png');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+.footer-widget-area {
+	padding: 70px 70px 0;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 40px 1fr;
+	position: relative;
+	font-size: 1rem;
+	font-family: Merriweather;
+	h2 {
+		color: $color__orange-brand;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-family: Novecentosanswide;
+		font-weight: bold;
+		i {
+			color: white;
+		}
+	}
+	a:link {
+		color: white;
+		text-decoration: none;
+	}
+	i, .contact-meta i {
+		padding-right: 10px;
+		font-size: 1.1rem;
+	}
+	.social {
+		margin-top: 5px;
+		i {
+			font-size: 1.5rem;
+		}
+	}
+	#text-6 {
+		grid-column: 1;
+	}
+	#tent-biz-hours-5 {
+		grid-column: 2;
+	}
+	.footer-logo {
+		background-image: url('../../assets/images/inhabitent-logo-text.svg');
+		grid-column: 4;
+		margin: 40px 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		a {
+			font-size: 3.6rem;
+			position: relative;
+			top: 10px;
+			color: rgba(0,0,0,0);
+		}
+	}
+	span {
+		font-weight: bold;
+	}
+}
+
+p.copyright {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	margin:0;
+	span {
+		font-size: 0.8rem;
+	}
 }

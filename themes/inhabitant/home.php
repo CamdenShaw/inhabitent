@@ -11,9 +11,11 @@
  */
 
 get_header(); ?>
+<?php get_sidebar(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary-home" class="content-area">
+		<main id="main-home" class="site-main-home" role="main">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -44,5 +46,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -8,8 +8,8 @@
 ?>
 
 <?php if ( is_archive( 'archive-product' ) || is_archive( 'taxonomy-product-type' ) ) : ?>
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
+	<article <?php post_class(); ?>>
+		<header class="entry-header-post">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<div class='product-container'><a class='product-img' href='<?php echo get_permalink();?>' > <?php the_post_thumbnail( 'medium' );?></a>
 					<div class='text-wrapper'>
