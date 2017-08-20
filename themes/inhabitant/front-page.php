@@ -65,29 +65,30 @@ get_header(); ?>
 				<div class='adventures-img1-container'>
 					<div class='adventures-img1'>
 						<h3 class='nature'>Getting Back to Nature in a Canoe</h3>
-						<a href=''>Read More</a>
+						<p class='read-more-link'><a class='read-more' href=''>Read More</a></p>
 					</div>
 				</div>
 				<div class='adventures-img2-container'>
 					<div class='adventures-img2'>
 						<h3 class='beach-friends'>A Night with Friends at the Beach</h3>
-						<a href=''>Read More</a>
+						<p class='read-more-link'><a class='read-more' href=''>Read More</a></p>
 					</div>
 				</div>
 				<div class='adventures-img3-container'>
 					<div class='adventures-img3'>
 						<h3 class='mountain-view'>Taking in the View at Big Mountain</h3>
-						<a href=''>Read More</a>
+						<p class='read-more-link'><a class='read-more' href=''>Read More</a></p>
 					</div>
 				</div>
 				<div class='adventures-img4-container'>
 					<div class='adventures-img4'>
 						<h3 class='stars'>Star-Gazing at the Night Sky</h3>
-						<a href=''>Read More</a>
+						<p class='read-more-link'><a class='read-more' href=''>Read More</a></p>
 					</div>
 				</div>
-				<a href=''>More Adventures</a>
+				<p class="more"><a class='more-adventures' href=''>More Adventures</a></p>
 			</div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

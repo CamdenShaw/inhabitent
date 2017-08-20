@@ -278,6 +278,16 @@ header.entry-header, header, h1, h2, h3, h4, h5, h6 {
 .read-more-link a {
   font-family: Novecentosanswide; }
 
+.adventures-container h3 {
+  font-family: Merriweather; }
+
+p.more .more-adventures {
+  font-family: Novecentosanswide; }
+
+h1.page-title {
+  font-family: Novecentosanswide;
+  font-weight: 900; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -433,10 +443,9 @@ table {
   padding: 40px 0; }
 
 body.archive .page-header ul {
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 0;
   text-align: center;
-  margin: 30px 0;
   padding-bottom: 60px;
   border-bottom: 1px #e1e1e1 dashed; }
 
@@ -500,6 +509,12 @@ article.type-product {
       margin: 10px 0 10px 20px; }
     article.type-product div.text-wrapper p.product-price {
       margin: 10px 20px 10px 0; }
+
+.blog .page-title {
+  display: none; }
+
+.side-widget-area {
+  position: right 0 0; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -933,40 +948,110 @@ div.words-wrapper {
     font-size: 1.5em; }
     div.words-wrapper .blog-post-title a:link {
       text-decoration: none; }
-  div.words-wrapper .read-more-link {
-    width: 146px;
-    height: 44px;
-    margin: 24px 0 0; }
-    div.words-wrapper .read-more-link a {
-      border: 1px black solid;
-      padding: 10px 22px;
-      text-transform: uppercase; }
-      div.words-wrapper .read-more-link a:link {
-        color: black;
-        text-decoration: none; }
-      div.words-wrapper .read-more-link a:visited {
-        color: black; }
-    div.words-wrapper .read-more-link:hover a {
-      background-color: #248A83;
-      border: 1px #808080 solid;
-      color: white; }
+
+.read-more-link {
+  width: 146px;
+  height: 44px;
+  margin: 24px 0 0; }
+  .read-more-link a {
+    border: 1px black solid;
+    padding: 10px 22px;
+    text-transform: uppercase; }
+    .read-more-link a:link {
+      color: black;
+      text-decoration: none; }
+    .read-more-link a:visited {
+      color: black; }
+  .read-more-link:hover a {
+    background-color: #248A83;
+    border: 1px #808080 solid;
+    color: white; }
 
 .adventures-title {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2.5em;
   margin: 140px; }
 
-.adventures-container .adventures-img1 {
-  background-image: url("../../assets/images/adventure-photos/canoe-girl.jpg"); }
+.adventures-container {
+  display: grid;
+  width: 1120px;
+  height: 570px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 30px;
+  grid-template-areas: "img1 img1 img2 img2" "img1 img1 img3 img4";
+  grid-gap: 20px;
+  grid-auto-flow: row; }
+  .adventures-container h3 {
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    font-weight: 100; }
+  .adventures-container .adventures-img1-container {
+    grid-area: img1; }
+  .adventures-container .adventures-img2-container {
+    grid-area: img2; }
+  .adventures-container .adventures-img3-container {
+    grid-area: img3; }
+  .adventures-container .adventures-img4-container {
+    grid-area: img4; }
+  .adventures-container .adventures-img4-container, .adventures-container .adventures-img3-container, .adventures-container .adventures-img2-container, .adventures-container .adventures-img1-container {
+    overflow: hidden; }
+  .adventures-container .adventures-img1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/images/adventure-photos/canoe-girl.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg"); }
+  .adventures-container .adventures-img2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg"); }
+  .adventures-container .adventures-img3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg"); }
+  .adventures-container .adventures-img4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/images/adventure-photos/night-sky.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg"); }
+  .adventures-container .adventures-img1, .adventures-container .adventures-img2, .adventures-container .adventures-img3, .adventures-container .adventures-img4 {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; }
+  .adventures-container .adventures-img1, .adventures-container .adventures-img2 {
+    padding: 89px 70px; }
+  .adventures-container .adventures-img2 {
+    background-position: center 85%;
+    padding-top: 66px; }
+  .adventures-container .adventures-img3, .adventures-container .adventures-img4 {
+    padding: 40px 35px; }
+    .adventures-container .adventures-img3 h3, .adventures-container .adventures-img4 h3 {
+      font-size: 1.6rem; }
+  .adventures-container .read-more-link .read-more {
+    color: #fff;
+    border-color: #fff;
+    background-color: none; }
+    .adventures-container .read-more-link .read-more:hover {
+      border-color: #248A83; }
+  .adventures-container p {
+    font-size: 0.8rem; }
+  .adventures-container p.more {
+    font-size: 1.2rem;
+    margin: 8px 0; }
+    .adventures-container p.more .more-adventures {
+      color: white;
+      padding: 12px 26px;
+      text-transform: uppercase;
+      background-color: #248A83; }
+      .adventures-container p.more .more-adventures:link {
+        text-decoration: none; }
+      .adventures-container p.more .more-adventures:visited {
+        color: white; }
+      .adventures-container p.more .more-adventures:hover {
+        background-color: #0f3936; }
 
-.adventures-container .adventures-img2 {
-  background-image: url("../../assets/images/adventure-photos/beach-bonfire.jpg"); }
-
-.adventures-container .adventures-img3 {
-  background-image: url("../../assets/images/adventure-photos/mountain-hikers.jpg"); }
-
-.adventures-container .adventures-img4 {
-  background-image: url("../../assets/images/adventure-photos/night-sky.jpg"); }
+div.site-info a {
+  display: none; }
 
 .products-wrapper {
   display: -webkit-box;

@@ -111,10 +111,9 @@ table {
 body.archive {
 	.page-header {
 		ul {
-			margin: 0 auto;
+			margin: 60px auto;
 			padding: 0;
 			text-align: center;
-			margin: 30px 0;
 			padding-bottom: 60px;
 			border-bottom: 1px $color__border dashed;
 		}
@@ -181,4 +180,12 @@ article.type-product {
 		margin: 10px 20px 10px 0;
 		}
 	}
+}
+
+.blog .page-title {
+	display: none;
+}
+
+.side-widget-area {
+	position: right 0 0;
 }
