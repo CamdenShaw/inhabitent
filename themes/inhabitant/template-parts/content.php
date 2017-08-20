@@ -40,7 +40,7 @@
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php the_excerpt(); ?>
-			<a class='read-more-link' href="<?php echo get_permalink(); ?>"> Read More </a>
+			<div class='read-more-link rml'><a href="<?php echo get_permalink(); ?>"> Read More →</a></div>
 		</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 <?php endif; ?>

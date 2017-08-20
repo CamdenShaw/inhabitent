@@ -49,7 +49,7 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 						<div class="words-wrapper">
-							<div class='entry-meta'>
+							<div class='entry-meta-fp'>
 								<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 comments', '1 Comment', '% Comment' ); ?>
 							</div>
 							<h3 class="blog-post-title"><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?> </a> </h3>

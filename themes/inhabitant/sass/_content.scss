@@ -282,7 +282,7 @@ a.disappear {
 }
 
 //blog page
-#primary-home, .content-area {
+#primary-home, .post-template-default .content-area {
 	width: 790px;
 	padding-right: 40px;
 	display: flex;
@@ -310,17 +310,34 @@ article .entry-title {
 	a {
 		color: white;
 		text-decoration: none;
+		&:hover {
+			color: $color__yellow-brand;
+		}
+		&:visited:hover {
+			color: $color__yellow-brand;
+		}
 	}
-	div.entry-meta {
-		float: right;
+}
+
+.entry-meta {
+	float: right;
+	color: white;
+	position: absolute;
+	transform: translate(87.1%, -51px);
+	padding: 10px 25px;
+	background-color: $color__green-brand;
+	text-align: center;
+	text-transform: uppercase;
+	width: 400px;
+	a {
 		color: white;
-		position: absolute;
-		transform: translate(87.1%, -51px);
-		padding: 10px 25px;
-		background-color: $color__green-brand;
-		text-align: center;
-		text-transform: uppercase;
-		width: 400px;
+		text-decoration: none;
+		&:hover {
+			color: $color__yellow-brand;
+		}
+		&:visited:hover {
+			color: $color__yellow-brand;
+		}
 	}
 }
 
@@ -335,6 +352,51 @@ div.entry-content {
 		font-weight: 100;
 	}
 }
+.rml {
+	width: 158px;
+}
+.entry-footer {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	span a {
+		text-decoration: none;
+	}
+}
+.tags-links {
+	padding-left: 20px;
+}
+
+.social-buttons {
+	display: inline;
+	margin: 0;
+	div {
+		display: inline;
+		a {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.comments {
+	.comments-titles {
+		font-family: Merriweather;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+}
+
+.post-a-comment {
+	padding: 50px 0 20px;
+	margin: 20px 0;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.comment-invite {
+	font-family: Merriweather;
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,

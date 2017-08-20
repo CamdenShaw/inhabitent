@@ -668,7 +668,7 @@ a {
 #primary-menu {
   position: fixed;
   width: 1120px;
-  z-index: 1;
+  z-index: 1000;
   padding: 0 38px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,7 +1146,7 @@ a.disappear {
   font-size: 0.9rem;
   margin-bottom: 40px; }
 
-#primary-home, .content-area {
+#primary-home, .post-template-default .content-area {
   width: 790px;
   padding-right: 40px;
   display: -webkit-box;
@@ -1178,17 +1178,29 @@ article .entry-title {
   article .entry-title a {
     color: white;
     text-decoration: none; }
-  article .entry-title div.entry-meta {
-    float: right;
+    article .entry-title a:hover {
+      color: #f0e4d1; }
+    article .entry-title a:visited:hover {
+      color: #f0e4d1; }
+
+.entry-meta {
+  float: right;
+  color: white;
+  position: absolute;
+  -webkit-transform: translate(87.1%, -51px);
+          transform: translate(87.1%, -51px);
+  padding: 10px 25px;
+  background-color: #248A83;
+  text-align: center;
+  text-transform: uppercase;
+  width: 400px; }
+  .entry-meta a {
     color: white;
-    position: absolute;
-    -webkit-transform: translate(87.1%, -51px);
-            transform: translate(87.1%, -51px);
-    padding: 10px 25px;
-    background-color: #248A83;
-    text-align: center;
-    text-transform: uppercase;
-    width: 400px; }
+    text-decoration: none; }
+    .entry-meta a:hover {
+      color: #f0e4d1; }
+    .entry-meta a:visited:hover {
+      color: #f0e4d1; }
 
 div.entry-content h2 {
   text-align: center;
@@ -1198,6 +1210,42 @@ div.entry-content p {
   font-size: 1.1rem;
   line-height: 1.3;
   font-weight: 100; }
+
+.rml {
+  width: 158px; }
+
+.entry-footer {
+  text-transform: uppercase;
+  font-size: 0.9rem; }
+  .entry-footer span a {
+    text-decoration: none; }
+
+.tags-links {
+  padding-left: 20px; }
+
+.social-buttons {
+  display: inline;
+  margin: 0; }
+  .social-buttons div {
+    display: inline; }
+    .social-buttons div a {
+      text-transform: uppercase; }
+
+.comments .comments-titles {
+  font-family: Merriweather;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.post-a-comment {
+  padding: 50px 0 20px;
+  margin: 20px 0;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.comment-invite {
+  font-family: Merriweather; }
 
 /* Asides */
 .blog .format-aside .entry-title,
