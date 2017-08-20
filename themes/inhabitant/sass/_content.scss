@@ -416,3 +416,28 @@ div.entry-content {
 div.site-info a {
 	display: inline;
 }
+
+.comment-list {
+	margin: 0;
+	padding: 0;
+}
+
+.comment-body {
+	display: flex;
+}
+
+.comment-author-avatar {
+	padding-right: 40px;
+	img {
+	border-radius: 49%;
+	}
+}
+
+.comment-author {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-weight: 2rem;
+	.fn {
+		font-style: normal;
+	}
+}

@@ -141,7 +141,7 @@ function red_starter_categorized_blog() {
  						<time datetime="<?php comment_time( 'c' ); ?>">
  								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
  						</time>
- 						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
+ 						<a>#</a>
  					</div><!-- .comment-metadata -->
 
  					<?php if ( '0' == $comment->comment_approved ) : ?>
