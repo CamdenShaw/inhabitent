@@ -42,9 +42,11 @@
 }
 
 @font-face {
-  font-family: 'Novecentosanwide';
-  src: url('../../assets/fonts/Novecento/Novecentosanwide-DemiBold.ttf');
-  src: url('../../assets/fonts/Novecento/Novecentosanwide-DemiBold.ttf') format('truetype');
+  font-family: 'Novecentosanswide';
+  src: url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf');
+  src: url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 .home {

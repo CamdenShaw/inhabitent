@@ -3,3 +3,37 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+//page.php
+div#content {
+  flex-direction: row-reverse;
+  div#primary-home {
+    width: 800px;
+    article#post-6 {
+      width: 100%;
+      h1.entry-title {
+        color: black;
+        position: relative;
+        top:100px;
+        font-weight: bold;
+        width: 100%;
+      }
+      h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 60px;
+      }
+      p {
+        font-family: Merriweather;
+        font-weight: normal;
+      }
+    }
+  }
+  div#secondary {
+    grid-column: 2;
+    width: 300px;
+  }
+}

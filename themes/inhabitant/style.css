@@ -261,9 +261,11 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecentosanwide';
-  src: url("../../assets/fonts/Novecento/Novecentosanwide-DemiBold.ttf");
-  src: url("../../assets/fonts/Novecento/Novecentosanwide-DemiBold.ttf") format("truetype"); }
+  font-family: 'Novecentosanswide';
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf");
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
 
 .home {
   font-family: Merriweather; }
@@ -716,6 +718,7 @@ a {
   display: flex;
   width: 1120px;
   margin: -2px auto 0;
+  font-size: 0.982rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -928,6 +931,11 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+#wpgmza_map {
+  margin-top: 0;
+  position: relative;
+  right: 0; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1053,11 +1061,13 @@ div.words-wrapper {
 .read-more-link {
   width: 146px;
   height: 44px;
-  margin: 24px 0 0; }
+  margin: 24px 0 0;
+  font-size: 1rem; }
   .read-more-link a {
     border: 1px black solid;
-    padding: 10px 22px;
-    text-transform: uppercase; }
+    padding: 10px 21px;
+    text-transform: uppercase;
+    font-weight: 100; }
     .read-more-link a:link {
       color: black;
       text-decoration: none; }
@@ -1204,7 +1214,7 @@ a.disappear {
   padding-top: 40px;
   width: 100%; }
 
-article .entry-title {
+article.post h2.entry-title, article.post h1.entry-title {
   display: block;
   position: absolute;
   -webkit-transform: translateY(-500px);
@@ -1216,12 +1226,12 @@ article .entry-title {
   line-height: 1;
   font-weight: bold;
   text-transform: uppercase; }
-  article .entry-title a {
+  article.post h2.entry-title a, article.post h1.entry-title a {
     color: white;
     text-decoration: none; }
-    article .entry-title a:hover {
+    article.post h2.entry-title a:hover, article.post h1.entry-title a:hover {
       color: #f0e4d1; }
-    article .entry-title a:visited:hover {
+    article.post h2.entry-title a:visited:hover, article.post h1.entry-title a:visited:hover {
       color: #f0e4d1; }
 
 .entry-meta {
@@ -1478,6 +1488,41 @@ input#submit.submit {
     .product-content article .content-container div.product-entry-meta {
       margin-bottom: 30px; }
 
+article h1.entry-title {
+  display: inline;
+  position: absolute;
+  text-align: center;
+  width: 1120px; }
+
+article.page h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 40px; }
+
+body.search div.site-content {
+  position: relative;
+  display: grid; }
+  body.search div.site-content #primary {
+    width: 800px;
+    height: 720px;
+    position: relative; }
+    body.search div.site-content #primary fieldset {
+      border-left: none;
+      border-right: none;
+      border-bottom: none; }
+    body.search div.site-content #primary div.page-content {
+      padding-top: 90px; }
+  body.search div.site-content #secondary {
+    margin-top: 50px;
+    width: 300px;
+    position: relative;
+    right: 0;
+    top: 0; }
+
+body.error404 h1.page-title {
+  padding-top: 100px;
+  margin-top: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1542,3 +1587,30 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+div#content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  div#content div#primary-home {
+    width: 800px; }
+    div#content div#primary-home article#post-6 {
+      width: 100%; }
+      div#content div#primary-home article#post-6 h1.entry-title {
+        color: black;
+        position: relative;
+        top: 100px;
+        font-weight: bold;
+        width: 100%; }
+      div#content div#primary-home article#post-6 h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 60px; }
+      div#content div#primary-home article#post-6 p {
+        font-family: Merriweather;
+        font-weight: normal; }
+  div#content div#secondary {
+    grid-column: 2;
+    width: 300px; }

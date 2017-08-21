@@ -127,10 +127,12 @@ div.words-wrapper {
 	width:146px;
 	height: 44px;
 	margin: 24px 0 0;
+	font-size: 1rem;
 	a {
 		border: 1px black solid;
-		padding: 10px 22px;
+		padding: 10px 21px;
 		text-transform: uppercase;
+		font-weight: 100;
 		&:link {
 			color: black;
 			text-decoration: none;
@@ -296,7 +298,9 @@ a.disappear {
 	width: 100%;
 }
 
-article .entry-title {
+
+
+article.post h2.entry-title, article.post h1.entry-title {
 	display: block;
 	position: absolute;
 	transform: translateY(-500px);
@@ -616,5 +620,52 @@ input#submit.submit {
 		div.product-entry-meta {
 			margin-bottom: 30px;
 		}
+	}
+}
+
+//about
+article h1.entry-title {
+	display: inline;
+	position: absolute;
+	text-align: center;
+	width: $width;
+}
+article.page h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-top: 40px;
+}
+
+//search
+body.search div.site-content {
+	position: relative;
+	display: grid;
+	#primary {
+		width: 800px;
+		height: 720px;
+		position: relative;
+		fieldset {
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+		div.page-content{
+			padding-top: 90px;
+		}
+	}
+	#secondary {
+		margin-top: 50px;
+		width: 300px;
+		position: relative;
+		right: 0;
+		top:0;
+	}
+}
+
+// 404
+body.error404 {
+	h1.page-title {
+		padding-top: 100px;
+		margin-top: 0;
 	}
 }
