@@ -14,8 +14,12 @@
 		});
 	}
 
-	$(document).ready(function() {
+
+$(window).load(function() {
+	$('.BodyA').css('display',null);
+	
 	let x = $( '.content-area' ).height() - 50 ;
+	console.log(x);
 	$('.side-widget-area').css({
     height: `${x}px`,
 	});

@@ -346,7 +346,7 @@ div.entry-content {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	p {
+	p.BodyA {
 		font-size: 1.1rem;
 		line-height: 1.3;
 		font-weight: 100;
@@ -560,4 +560,16 @@ input#submit.submit {
 	border-radius: 0;
 	margin: 0 0 50px;
 	padding: 12px 24px;
+}
+
+//about page
+.container .entry-content {
+	h2 {
+		font-size: 1.5rem;
+	}
+	p {
+		margin: 25px 180px;
+		font-size: 1rem;
+		font-family: Merriweather;
+	}
 }

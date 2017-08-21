@@ -20,12 +20,11 @@ p.site-description {
 .home, .page {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	width: $width;
-	border: 1px solid $color__border;
 	margin: 0 auto;
 	font-size: 16px;
 	color: #404040;
 	line-height: 1.75em;
-	background-color: $color__background-screen;
+	background-color: lighten($color__background-screen, 1%);
 }
  
 h1.entry-title {
@@ -93,6 +92,7 @@ table {
 	width: 100%;
 }
 
+//front-page shop nav
 .fp-shop-title, .journal-title-fp {
 	font-size: 2.5rem;
 	text-align: center;
@@ -207,6 +207,9 @@ article.type-product {
 	a:link {
 		color: white;
 		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	i, .contact-meta i {
 		padding-right: 10px;
