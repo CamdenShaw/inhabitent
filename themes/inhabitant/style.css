@@ -1271,9 +1271,14 @@ div.site-info a {
   display: -ms-flexbox;
   display: flex;
   margin: 40px 0;
-  border-bottom: 1px #e1e1e1 solid; }
+  border-bottom: 1px #e1e1e1 solid;
+  font-family: Merriweather; }
   .comment-body p {
-    margin: 0; }
+    margin: 18px 0; }
+  .comment-body .reply {
+    margin-bottom: 32px; }
+    .comment-body .reply a {
+      text-decoration: none; }
 
 .comments-title {
   padding-top: 80px;
@@ -1300,6 +1305,85 @@ div.site-info a {
       color: #808080; }
     .comment-metadata a:visited:hover {
       color: #808080; }
+
+.logged-in-as {
+  display: none; }
+
+.comment-reply-title {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+.comment-subtitle, .comment-notes {
+  font-size: 1rem;
+  font-family: Merriweather; }
+
+.comment-notes {
+  margin-bottom: 35px; }
+
+.comment-form-comment {
+  text-transform: uppercase;
+  font-size: 1.09rem;
+  margin: 5px 0; }
+  .comment-form-comment label {
+    display: block;
+    margin: 11px 0; }
+
+textarea#comment {
+  background-color: #f2f2f2; }
+
+.comment-form-author, .comment-form-email {
+  display: inline-block;
+  width: 49.7%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  text-transform: uppercase;
+  font-family: Novecentosanswide;
+  font-size: 1.1rem;
+  margin-top: 45px; }
+  .comment-form-author input, .comment-form-email input {
+    width: 100%;
+    margin: 10px 0 5px;
+    display: inline;
+    border-radius: 0; }
+  .comment-form-author span, .comment-form-email span {
+    color: red; }
+
+.comment-form-url {
+  display: inline;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: Novecentosanswide;
+  font-size: 1.1rem; }
+  .comment-form-url input {
+    width: 100%;
+    margin: 10px 0 10px;
+    display: inline;
+    border-radius: 0; }
+
+input#author, input#email, input#url {
+  background-color: #f2f2f2;
+  height: 38px;
+  border-color: #e1e1e1; }
+
+input#submit.submit {
+  background-color: #248A83;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  font-size: .9rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-family: Novecentosanswide;
+  border-radius: 0;
+  margin: 0 0 50px;
+  padding: 12px 24px; }
 
 /*--------------------------------------------------------------
 # Media
