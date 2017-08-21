@@ -508,15 +508,6 @@ article.type-product {
 .blog .page-title {
   display: none; }
 
-.side-widget-area {
-  border-left: 1px #e1e1e1 solid;
-  float: right;
-  position: relative;
-  width: 300px;
-  padding: 40px 60px 0;
-  top: 50px;
-  z-index: -1; }
-
 .site-footer {
   background-image: url("../../assets/images/footer/dark-wood@2x.png");
   background-size: contain;
@@ -575,6 +566,52 @@ p.copyright {
   margin: 0; }
   p.copyright span {
     font-size: 0.8rem; }
+
+.side-widget-area {
+  border-left: 1px #e1e1e1 solid;
+  float: right;
+  position: relative;
+  width: 300px;
+  padding: 30px 0 0 50px;
+  top: 50px; }
+  .side-widget-area aside {
+    margin-top: 20px; }
+
+#text-3 .widget-title, #tent-biz-hours-3 .widget-title, #archives-2 .widget-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  padding-top: 30px; }
+
+.day-of-week {
+  font-weight: bold; }
+
+.tent-biz-hours-class p {
+  font-family: Merriweather;
+  margin-bottom: 15px; }
+
+.widget-phone, .contact-meta {
+  font-size: 1.05rem;
+  font-family: Merriweather; }
+  .widget-phone i, .contact-meta i {
+    font-size: 1rem;
+    padding-right: 11px; }
+  .widget-phone a, .contact-meta a {
+    font-family: Merriweather;
+    text-decoration: none; }
+  .widget-phone span, .contact-meta span {
+    margin-left: 18px; }
+
+#archives-2 ul {
+  margin: 0;
+  padding: 0; }
+  #archives-2 ul li {
+    display: block;
+    font-family: Merriweather;
+    margin: 5px 0; }
+    #archives-2 ul li a {
+      text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Forms

@@ -15,8 +15,7 @@
 	}
 
 	$(document).ready(function() {
-	let x = $( '.content-area' ).height();
-	console.log(x);
+	let x = $( '.content-area' ).height() - 50 ;
 	$('.side-widget-area').css({
     height: `${x}px`,
 	});
