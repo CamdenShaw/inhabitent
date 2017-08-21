@@ -288,6 +288,9 @@ h1.page-title {
   font-family: Novecentosanswide;
   font-weight: 900; }
 
+.single-product-price p {
+  font-family: Novecentosanswide; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -1430,6 +1433,50 @@ input#submit.submit {
   margin: 25px 180px;
   font-size: 1rem;
   font-family: Merriweather; }
+
+.product-content article {
+  border: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  width: 100%;
+  height: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .product-content article .product-entry-header {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    height: 600px; }
+    .product-content article .product-entry-header img {
+      grid-column: 1;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: auto;
+      overflow: hidden; }
+  .product-content article .content-container {
+    grid-column: 2;
+    padding: 20px 20px 25px;
+    width: 100%;
+    height: 100%; }
+    .product-content article .content-container h1 {
+      color: #d99054;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 100px; }
+    .product-content article .content-container div.product-entry-meta {
+      margin-bottom: 30px; }
 
 /*--------------------------------------------------------------
 # Media

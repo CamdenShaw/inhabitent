@@ -16,7 +16,12 @@
 
 
 $(window).load(function() {
-	$('.BodyA').css('display',null);
+	$('.BodyA').css({
+		'line-height' : '1.8rem',
+		'margin' 			: '0',
+		'font-size'		: '0.9rem',
+		'font-family'	: 'Merriweather'
+	});
 	
 	let x = $( '.content-area' ).height() - 50 ;
 	console.log(x);
