@@ -15,19 +15,19 @@
 	}
 
 
-$(window).load(function() {
-	$('.BodyA').css({
-		'line-height' : '1.8rem',
-		'margin' 			: '0',
-		'font-size'		: '0.9rem',
-		'font-family'	: 'Merriweather'
-	});
+// $(window).load(function() {
+// 	$('.BodyA').css({
+// 		'line-height' : '1.8rem',
+// 		'margin' 			: '0',
+// 		'font-size'		: '0.9rem',
+// 		'font-family'	: 'Merriweather'
+// 	});
 	
-	let x = $( '.content-area' ).height() - 50 ;
-	console.log(x);
-	$('.side-widget-area').css({
-    height: `${x}px`,
-	});
-});
+// 	let x = $( '.content-area' ).height() - 50 ;
+// 	console.log(x);
+// 	$('.side-widget-area').css({
+//     height: `${x}px`,
+// 	});
+// });
 
 })(jQuery);

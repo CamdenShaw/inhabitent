@@ -36,7 +36,7 @@
 @font-face {
   font-family: 'Novecentosanswide';
   src: url('../../assets/fonts/Novecento/Novecentosanswide-Normal.ttf');
-  src: url('../../assets/fonts/Novecento/Novecentosanswide-Normal.ttf') format('truetype');
+  src: local('Novecentosanswide'), local('novecento sans wide'), local('Novecento Sans Wide'), local('Novecento-Sans-Wide'), local('Novecento Sans Wide'), url('../../assets/fonts/Novecento/Novecentosanswide.ttf') format('truetype'), url('../../assets/fonts/Novecento/Novecentosanswide.eot') format('embedded-opentype'), url('../../assets/fonts/Novecento/Novecentosanswide.svg') format('svg'), url('../../assets/fonts/Novecento/Novecentosanswide.woff') format('woff'), url('../../assets/fonts/Novecento/Novecentosanswide.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +44,7 @@
 @font-face {
   font-family: 'Novecentosanswide';
   src: url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf');
-  src: url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf') format('truetype');
+  src: local('Novecentosanswide-bold'), local('novecento sans wide bold'), local('Novecento Sans Wide Bold'), local('Novecento-Sans-Wide-Bold'), local('Novecento Sans Wide Bold'), url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf') format('truetype'), url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.eot') format('embedded-opentype'), url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.svg') format('svg'), url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff') format('woff'), url('../../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
