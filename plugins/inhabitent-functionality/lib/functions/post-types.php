@@ -39,7 +39,7 @@ function inhabitent_cpt_product() {
       'filter_items_list'     => 'Filter Products list',
     );
     $args = array(
-      'label'                 => 'Product',
+      'label'                 => 'Products',
       'description'           => 'Custom product post type',
       'labels'                => $labels,
       'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
