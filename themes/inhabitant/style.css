@@ -355,12 +355,19 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-size: 1rem;
-  width: 1120px;
+  width: 100vw;
+  min-width: 1120px;
   margin: 0 auto;
   height: 100%; }
 
 body {
-  height: 100%; }
+  width: 100vw;
+  min-width: 1120px;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 p.site-description {
   display: none; }
@@ -368,7 +375,6 @@ p.site-description {
 .home, .page {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  width: 1120px;
   margin: 0 auto;
   font-size: 16px;
   color: #404040;
@@ -700,16 +706,19 @@ a {
 
 #primary-menu {
   position: fixed;
-  width: 1120px;
+  left: 0;
+  width: 100vw;
+  min-width: 1120px;
   z-index: 1000;
-  padding: 0 38px 0;
+  padding: 0;
   display: -ms-flexbox;
   display: flex;
-  width: 1120px;
-  margin: -2px auto 0;
+  margin: 0;
   font-size: 0.982rem;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-direction: row;
       flex-direction: row;
   text-transform: uppercase;
@@ -938,6 +947,23 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+div.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100vw;
+  min-width: 1120px; }
+  div.site-content main.site-main {
+    width: 1120px;
+    margin: 0 auto; }
 
 .shop-stuff {
   width: auto;
@@ -1391,6 +1417,17 @@ input#submit.submit {
   font-size: 1rem;
   font-family: Merriweather; }
 
+article h1.entry-title {
+  display: inline;
+  position: absolute;
+  text-align: center;
+  width: 1120px; }
+
+article.page h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 40px; }
+
 .product-content article {
   border: 0;
   display: -ms-grid;
@@ -1438,17 +1475,6 @@ input#submit.submit {
       margin-top: 100px; }
     .product-content article .content-container div.product-entry-meta {
       margin-bottom: 30px; }
-
-article h1.entry-title {
-  display: inline;
-  position: absolute;
-  text-align: center;
-  width: 1120px; }
-
-article.page h2 {
-  font-weight: bold;
-  font-size: 2rem;
-  margin-top: 40px; }
 
 body.search div.site-content {
   position: relative;
@@ -1539,29 +1565,27 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-div#content {
-  -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse; }
-  div#content div#primary-home {
-    width: 800px; }
-    div#content div#primary-home article#post-6 {
+div#content div#primary-home {
+  width: 800px; }
+  div#content div#primary-home article#post-6 {
+    width: 100%; }
+    div#content div#primary-home article#post-6 h1.entry-title {
+      color: black;
+      position: relative;
+      top: 100px;
+      font-weight: bold;
       width: 100%; }
-      div#content div#primary-home article#post-6 h1.entry-title {
-        color: black;
-        position: relative;
-        top: 100px;
-        font-weight: bold;
-        width: 100%; }
-      div#content div#primary-home article#post-6 h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: left;
-        margin-top: 60px; }
-      div#content div#primary-home article#post-6 p {
-        font-family: Merriweather;
-        font-weight: normal; }
-  div#content div#secondary {
-    -ms-grid-column: 2;
-        grid-column: 2;
-    width: 300px; }
+    div#content div#primary-home article#post-6 h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 60px; }
+    div#content div#primary-home article#post-6 p {
+      font-family: Merriweather;
+      font-weight: normal; }
+
+div#content div#secondary {
+  -ms-grid-column: 2;
+      grid-column: 2;
+  width: 300px; }

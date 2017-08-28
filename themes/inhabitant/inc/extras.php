@@ -74,6 +74,8 @@ function inhabitent_front_page_dynamic_css() {
 		background: url('./wp-content/themes/inhabitant/assets/images/inhabitent-logo-full.svg') no-repeat center center,
 		linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100% ), url({$image}) no-repeat center bottom;
 		height: 100vh;
+		width: 100vw;
+		min-width: 1120px;
 		background-size: 25%, cover, cover;
 		margin: 0 auto;
 	}";

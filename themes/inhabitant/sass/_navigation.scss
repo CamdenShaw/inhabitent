@@ -33,14 +33,16 @@ a {
 
 #primary-menu {
 	position: fixed;
-	width: $width;
+	left: 0;
+	width: 100vw;
+	min-width: $width;
 	z-index: 1000;
-	padding: 0 38px 0;
+	padding: 0;
 	display: flex;
-	width: $width;
-	margin: -2px auto 0;
+	margin: 0;
 	font-size: 0.982rem;
-	justify-content: flex-end;
+	justify-content: center;
+	align-content: center;
 	flex-direction: row;
 	text-transform: uppercase;
 	background-color: rgba(255,255,255,0.7);
