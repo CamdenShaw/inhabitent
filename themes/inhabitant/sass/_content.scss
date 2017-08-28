@@ -45,6 +45,7 @@ div.site-content {
 		margin: 0 auto;
 	}
 }
+
 .shop-stuff {
 	width: auto;
 	height: auto;
@@ -105,7 +106,7 @@ div.most-recent-journal {
 	width: $width;
 	display: flex;
 	justify-content: space-between;
-	margin: 100px 0;
+	margin: 10px 0;
 	.journal-recent-block-item {
 		display: flex;
 		flex-direction: column;
@@ -167,7 +168,7 @@ div.words-wrapper {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 2.5em;
-	margin: 140px;
+	margin: 70px;
 }
 
 .adventures-container {

@@ -439,7 +439,8 @@ table {
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 40px 0; }
+  padding: 65px 0;
+  margin: 0; }
 
 body.archive .page-header ul {
   margin: 60px auto;
@@ -512,13 +513,13 @@ article.type-product {
   background-repeat: repeat; }
 
 .footer-widget-area {
-  padding: 70px 70px 0;
+  padding: 50px 70px 0;
   height: auto;
   color: white;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 40px 1fr;
-      grid-template-columns: 1fr 1fr 40px 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   position: relative;
   font-size: 1rem;
   font-family: Merriweather; }
@@ -552,7 +553,7 @@ article.type-product {
     background-image: url("../../assets/images/inhabitent-logo-text.svg");
     -ms-grid-column: 4;
         grid-column: 4;
-    margin: 40px 0;
+    margin: 20px 0;
     background-size: contain;
     background-repeat: no-repeat; }
     .footer-widget-area .footer-logo a {
@@ -1022,7 +1023,7 @@ div.most-recent-journal {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin: 100px 0; }
+  margin: 10px 0; }
   div.most-recent-journal .journal-recent-block-item {
     display: -ms-flexbox;
     display: flex;
@@ -1072,7 +1073,7 @@ div.words-wrapper {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
-  margin: 140px; }
+  margin: 70px; }
 
 .adventures-container {
   display: -ms-grid;

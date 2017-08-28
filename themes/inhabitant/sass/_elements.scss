@@ -102,7 +102,8 @@ table {
 	font-size: 2.5rem;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 40px 0;
+	padding: 65px 0;
+	margin:0;
 }
 
 body.archive {
@@ -191,11 +192,11 @@ article.type-product {
 }
 
 .footer-widget-area {
-	padding: 70px 70px 0;
+	padding: 50px 70px 0;
 	height: auto;
 	color: white;
 	display: grid;
-	grid-template-columns: 1fr 1fr 40px 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	position: relative;
 	font-size: 1rem;
 	font-family: Merriweather;
@@ -235,7 +236,7 @@ article.type-product {
 	.footer-logo {
 		background-image: url('../../assets/images/inhabitent-logo-text.svg');
 		grid-column: 4;
-		margin: 40px 0;
+		margin: 20px 0;
 		background-size: contain;
 		background-repeat: no-repeat;
 		a {
