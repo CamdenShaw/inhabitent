@@ -72,8 +72,12 @@
 	width: 70%;
 }
 #secondary {
-	padding-left: 40px;
+  border-left: 1px solid #e1e1e1;
+	position: relative;
 	width: 30%;
+	margin-bottom: 50px;
+	padding: 50px 0 0 50px;
+	top: 50px;
 }
 
 article.post {
@@ -107,6 +111,11 @@ article.post {
 				color: $color__yellow-brand;
 			}
 		}
+	}
+	div.entry-content p {
+		font-family: Merriweather;
+		font-size: 1rem;
+		line-height: 1.75;
 	}
 }
 
@@ -150,6 +159,7 @@ div.entry-content {
 .entry-footer {
 	text-transform: uppercase;
 	font-size: 0.9rem;
+	padding-bottom: 40px;
 	span a {
 		text-decoration: none;
 	}
