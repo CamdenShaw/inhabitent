@@ -186,27 +186,84 @@ article.type-product {
 }
 
 //search
-body.search div.site-content {
-	position: relative;
-	display: grid;
+body.search div.site-content, body.error404 div.site-content {
+	main.site-main {
+		margin-bottom: 80px;
+		padding-right: 60px;
+	}
+	div.page-content{
+		margin-top: 0;
+		padding-top: 120px;
+		padding-top: 90px;
+	}
 	#primary {
 		width: 70%;
-		height: 720px;
 		position: relative;
 		fieldset {
 			border-left: none;
 			border-right: none;
 			border-bottom: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
-		div.page-content{
-			padding-top: 90px;
+		input.search-field {
+			margin-top: 40px;
+			width: 200px;
 		}
-	}
-	#secondary {
-		margin-top: 50px;
-		width: 30%;
-		position: relative;
-		right: 0;
-		top:0;
+		button.search-submit {
+			display: none;
+		}
+		h1.page-title {
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			margin: 100px 0 20px 0;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $color__border;
+		}
+		h2.entry-title {
+			color: black;
+			display: inline;
+			position: relative;
+			padding: 20px 25px 0 0;
+			width: 100%;
+			font-size: 2.1rem;
+			background-color: rgba(0,0,0,0);
+			line-height: 1;
+			font-weight: 700;
+			text-transform: uppercase;
+			a{
+				color: $color__green-brand;
+				&:link {
+					color: $color__green-brand;
+				}
+				&:hover{
+					color: black;
+				}
+				&:visitied {
+					color: $color__green-brand;
+				}
+				&:hover:visited {
+					color: black;
+				}
+			}
+		}
+
+		div.entry-meta {
+			position: relative;
+			color: black;
+			padding: 5px 15px 0 0;
+			margin: 25px 0;
+			background-color: rgba(0,0,0,0);
+			text-align: left;
+			text-transform: uppercase;
+			width: 100%;
+			top: 0;
+		}
+		article.page {
+			margin-right: 60px;
+		}
+		article.post {
+			margin-top: 60px;
+		}
 	}
 }

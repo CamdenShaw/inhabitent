@@ -31,13 +31,14 @@ a {
 	padding: 10px;
 }
 
-#primary-menu {
+div#primary-menu {
 	position: fixed;
 	left: 0;
 	width: 100vw;
 	min-width: $width;
 	z-index: 1000;
 	padding: 0;
+	height: 50px;
 	display: flex;
 	margin: 0;
 	font-size: 0.982rem;
