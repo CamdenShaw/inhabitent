@@ -513,17 +513,18 @@ body.search div.site-content main.site-main, body.error404 div.site-content main
   padding-right: 60px; }
 
 body.search div.site-content div.page-content, body.error404 div.site-content div.page-content {
-  margin-top: 0;
-  padding-top: 120px;
-  padding-top: 90px; }
+  margin-top: 0; }
+
+body.search div.site-content article.page, body.error404 div.site-content article.page {
+  margin-right: 60px;
+  margin-top: 60px; }
 
 body.search div.site-content #primary, body.error404 div.site-content #primary {
   width: 70%;
-  position: relative; }
+  position: relative;
+  margin-top: 80px; }
   body.search div.site-content #primary fieldset, body.error404 div.site-content #primary fieldset {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: none;
     padding-left: 0;
     margin-left: 0; }
   body.search div.site-content #primary input.search-field, body.error404 div.site-content #primary input.search-field {
@@ -534,8 +535,8 @@ body.search div.site-content #primary, body.error404 div.site-content #primary {
   body.search div.site-content #primary h1.page-title, body.error404 div.site-content #primary h1.page-title {
     text-transform: uppercase;
     font-size: 2.4rem;
-    margin: 100px 0 20px 0;
     padding-bottom: 20px;
+    margin-bottom: 0;
     border-bottom: 1px solid #e1e1e1; }
   body.search div.site-content #primary h2.entry-title, body.error404 div.site-content #primary h2.entry-title {
     color: black;
@@ -568,10 +569,10 @@ body.search div.site-content #primary, body.error404 div.site-content #primary {
     text-transform: uppercase;
     width: 100%;
     top: 0; }
-  body.search div.site-content #primary article.page, body.error404 div.site-content #primary article.page {
-    margin-right: 60px; }
-  body.search div.site-content #primary article.post, body.error404 div.site-content #primary article.post {
-    margin-top: 60px; }
+  body.search div.site-content #primary div.entry-summary, body.error404 div.site-content #primary div.entry-summary {
+    font-family: Merriweather;
+    line-height: 1.75;
+    font-size: .95rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -855,7 +856,8 @@ div#primary-menu {
       div#primary-menu .search-form fieldset input {
         background-color: transparent;
         border: 0;
-        padding: 12px; }
+        padding: 12px;
+        width: 100%; }
         div#primary-menu .search-form fieldset input:focus {
           outline: none; }
   div#primary-menu .search-form-click {
@@ -1730,14 +1732,20 @@ iframe {
     .page-template-default .site-content article#post-6 h2.mail {
       text-align: left; }
 
-.container .entry-content h2 {
+body.page-template-about div.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+body.page-template-about .entry-content h2 {
   font-size: 2.2rem; }
 
-.container .entry-content p {
+body.page-template-about .entry-content p {
   margin: 25px 160px;
   font-size: 1rem;
-  font-family: Merriweather; }
-  .container .entry-content p:last-of-type {
+  font-family: Merriweather;
+  line-height: 1.75; }
+  body.page-template-about .entry-content p:last-of-type {
     padding-bottom: 50px; }
 
 article.page-template-about h1.entry-title {

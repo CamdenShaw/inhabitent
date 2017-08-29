@@ -17,7 +17,7 @@ get_header();
 
   <main id="main" class="site-main" role="main">
 
-      <div class="container">
+      <div class="main-container">
         <div class="entry-content">
           <h2>Our Story</h2>
           <?php echo CFS()->get( 'about_our_story' ); ?>

@@ -285,7 +285,13 @@ iframe {
 }
 
 //about page
-.container .entry-content {
+body.page-template-about {
+	div.container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+	.entry-content {
 	h2 {
 		font-size: 2.2rem;
 	}
@@ -293,11 +299,12 @@ iframe {
 		margin: 25px 160px;
 		font-size: 1rem;
 		font-family: Merriweather;
+		line-height: 1.75;
 		&:last-of-type {
 			padding-bottom: 50px;
 		}
 	}
-}
+}}
 
 article.page-template-about h1.entry-title {
 	display: inline;
