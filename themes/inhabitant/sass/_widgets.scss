@@ -22,25 +22,37 @@
 	position: relative;
 	right: 0;
 }
+
 //sidebar
-.side-widget-area {
-	border-left: 1px $color__border solid;
-	float: right;
-	position: relative;
-	width: 300px;
-	padding: 30px 0 0 50px;
-	top: 50px;
-	aside {
-		margin-top: 20px;
+body.blog div.site-content {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	width: $width;
+	align-content: center;
+	margin: 0 auto;
+	div#primary-home {
+		width: 70%;
+	}
+	.side-widget-area {
+		border-left: 1px $color__border solid;
+		position: relative;
+		width: 30%;
+		margin-bottom: 50px;
+		padding: 50px 0 0 50px;
+		top: 50px;
+		aside.widget {
+			margin-bottom: 60px;
+		}
 	}
 }
 
 #text-3 .widget-title, #tent-biz-hours-3 .widget-title, #archives-2 .widget-title {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	letter-spacing: 3px;
-	padding-top: 30px;
+	margin: 10px 0;
 }
 
 .day-of-week {

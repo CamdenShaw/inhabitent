@@ -41,6 +41,9 @@
 	flex-flow: row-reverse wrap-reverse;
 	flex-basis: 800px;
 	margin: 0 0 80px;
+	#primary-home {
+		width: 700px;
+	}
 	.entry-header-post img {
 		margin: 0;
 		object-fit: cover;
@@ -57,49 +60,62 @@
 }
 
 //blog page
-#primary-home, .post-template-default .content-area {
-	width: 790px;
-	padding-right: 40px;
+.post-template-default .content-area,.post-template-default .site-content {
 	display: flex;
-	flex-direction: column-reverse;
-	height: 100%;
+	flex-direction: row-reverse;
+	width: $width;
+	margin: auto;
 }
 
-.entry-header img {
-	margin-top: 50px;
-	padding-top: 40px;
-	width: 100%;
+#primary-home {
+	padding-right: 40px;
+	width: 70%;
+}
+#secondary {
+	padding-left: 40px;
+	width: 30%;
 }
 
-article.post h2.entry-title, article.post h1.entry-title {
-	display: block;
-	position: absolute;
-	transform: translateY(-500px);
-	width: 550px;
-	font-size: 2.1rem;
-	background-color: $color__green-brand;
-	padding: 20px 40px;
-	line-height: 1;
-	font-weight: bold;
-	text-transform: uppercase;
-	a {
+article.post {
+	position: relative;
+	margin: 100px 0 0;
+	padding: 0;
+	.entry-header img {
+		height: 510px;
+		width: 100%;
+	}
+	h2.entry-title, h1.entry-title {
 		color: white;
-		text-decoration: none;
-		&:hover {
-			color: $color__yellow-brand;
-		}
-		&:visited:hover {
-			color: $color__yellow-brand;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px 25px;
+		width: 550px;
+		font-size: 2.1rem;
+		background-color: $color__green-brand;
+		line-height: 1;
+		font-weight: bold;
+		text-transform: uppercase;
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: $color__yellow-brand;
+			}
+			&:visited:hover {
+				color: $color__yellow-brand;
+			}
 		}
 	}
 }
 
 .entry-meta {
-	float: right;
-	color: white;
 	position: absolute;
-	transform: translate(87.1%, -51px);
-	padding: 10px 25px;
+	top: 476px;
+	right: 0;
+	color: white;
+	padding: 5px 15px;
 	background-color: $color__green-brand;
 	text-align: center;
 	text-transform: uppercase;
@@ -121,14 +137,15 @@ div.entry-content {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	p.BodyA {
+	p {
 		font-size: 1.1rem;
 		line-height: 1.3;
 		font-weight: 100;
 	}
 }
-.rml {
-	width: 158px;
+
+.read-more-link.rml {
+	width: auto;
 }
 .entry-footer {
 	text-transform: uppercase;
@@ -236,32 +253,6 @@ div.entry-content {
 				padding-bottom: 10px;
 			}
 		}
-	}
-}
-
-//search
-body.search div.site-content {
-	position: relative;
-	display: grid;
-	#primary {
-		width: 800px;
-		height: 720px;
-		position: relative;
-		fieldset {
-			border-left: none;
-			border-right: none;
-			border-bottom: none;
-		}
-		div.page-content{
-			padding-top: 90px;
-		}
-	}
-	#secondary {
-		margin-top: 50px;
-		width: 300px;
-		position: relative;
-		right: 0;
-		top:0;
 	}
 }
 

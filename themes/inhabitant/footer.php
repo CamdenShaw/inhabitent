@@ -15,7 +15,7 @@
 				}
 				?>
 
-				<div id="secondary" class="footer-widget-area" role="complementary">
+				<div id="tertiary" class="footer-widget-area" role="complementary">
 					<?php dynamic_sidebar( 'footer-widget' ); ?>
 					<div class="footer-logo" ><a href="<?php echo home_url() ?>">home page</a></div>
 				</div><!-- #secondary -->
