@@ -1,6 +1,6 @@
 # inhabitent
 
-![alt text](readme-image/inhabitent.png "Welcome to the Inhabitent Wordpress Site")
+![alt text](readme-image/Inhabitent.png "Welcome to the Inhabitent Wordpress Site")
 
 inhabitent is a wordpress project designed by RED-academy.
 
