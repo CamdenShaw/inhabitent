@@ -209,7 +209,7 @@ div.words-wrapper {
 	.read-more-link .read-more {
 		color: $color__background-body;
 		border-color: $color__background-body;
-		background-color: none;
+		background-color: rgba(0,0,0,0);
 		&:hover {
 			border-color: $color__green-brand;
 		}
