@@ -11,6 +11,6 @@ What I have learned in this project:
 
 Wordpress is not for the average internet user.
 
-I have learned taxonomies are a thing that exist.  They are similar to classes and arrays they are most useful in conjunction with Wordpress especially when creating custom post-types.
+I have learned taxonomies are similar to classes and arrays they are most useful in conjunction with Wordpress especially when creating custom post-types that you want to separate by category.
 
-Building websites on your computer that never need to be uploaded and shared with the world is a lot easier and straight-forward than Wordpress.
+Building single page websites on your computer that never needs to be shared with the world is a lot easier and straight-forward than Wordpress.

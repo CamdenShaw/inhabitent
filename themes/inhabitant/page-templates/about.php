@@ -17,17 +17,17 @@ get_header();
 
   <main id="main" class="site-main" role="main">
 
-      <div class="main-container">
-        <div class="entry-content">
-          <h2>Our Story</h2>
-          <?php echo CFS()->get( 'about_our_story' ); ?>
+    <div class="main-container">
+      <div class="entry-content">
+        <h2>Our Story</h2>
+        <?php echo CFS()->get( 'about_our_story' ); ?>
 
-          <h2>Our Team</h2>
-          <?php echo CFS()->get( 'about_our_team' ); ?>
-        </div>
+        <h2>Our Team</h2>
+        <?php echo CFS()->get( 'about_our_team' ); ?>
       </div>
-    </article>
-  </main>
+      </div>
+    </main>
+  </article>
 </div>
 
 <?php get_footer(); ?>

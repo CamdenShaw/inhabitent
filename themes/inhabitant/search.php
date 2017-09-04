@@ -8,7 +8,7 @@
 get_header();
 get_sidebar(); ?>
 
-		<main id="primary" class="site-main" role="main">
+	<main id="primary" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -31,6 +31,6 @@ get_sidebar(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
+	</main><!-- #main -->
 
 <?php get_footer(); ?>

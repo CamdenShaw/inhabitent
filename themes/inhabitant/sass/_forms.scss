@@ -20,14 +20,11 @@ input[type="submit"] {
 	border-radius: 0;
 	margin: 0 0 50px;
 	padding: 12px 24px;
-
 	&:hover {
 		border-color: #ccc #bbb #aaa;
 		background-color: $color__link-hover;
 	}
-
-	&:active,
-	&:focus {
+	&:active,	&:focus {
 		border-color: #aaa #bbb #bbb;
 		background-color: $color__link-hover;
 	}
@@ -130,7 +127,6 @@ div.site-info a {
 .comment-metadata {
 	color: $color__m-grey-brand;
 	font-family: Merriweather;
-	
 	a {
 		color: $color__m-grey-brand;
 		&:hover {
@@ -176,19 +172,18 @@ textarea#comment {
 }
 
 .comment-form-author, .comment-form-email {
- display: inline-block;
- width: 49.7%;
- flex-direction: row;
- flex-flow: wrap;
- text-transform: uppercase;
- font-family: Novecentosanswide;
- font-size: 1.1rem;
- margin-top: 45px;
- input {
-	 width: 100%;
-	 margin: 10px 0 5px;
-	 display: inline;
-	 border-radius: 0;
+	display: inline-block;
+	width: 49.7%;
+	flex-direction: row;
+	flex-flow: wrap;
+	text-transform: uppercase;
+	font-family: Novecentosanswide;
+	font-size: 1.1rem;
+	margin-top: 45px;
+	input {
+		margin: 10px 0 5px;
+		display: inline;
+		border-radius: 0;
 	}
 	span {
 		color: red;
@@ -197,12 +192,10 @@ textarea#comment {
 
 .comment-form-url {
 	display: inline;
-	width: 100%;
 	text-transform: uppercase;
 	font-family: Novecentosanswide;
 	font-size: 1.1rem;
 	input {
-		width: 100%;
 		margin: 10px 0 10px;
 		display: inline;
 		border-radius: 0;

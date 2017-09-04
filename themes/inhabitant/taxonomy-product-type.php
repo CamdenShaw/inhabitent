@@ -7,42 +7,42 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+		<header class="page-header">
+			<?php
+				$title = get_queried_object()->name;
+				echo '<h1 class="page-title">' . $title . '</h1>';
+				the_archive_description( '<div class="taxonomy-products-description">', '</div>' );
+			?>
+		</header><!-- .page-header -->
+
+		<?php /* Start the Loop */ ?>
+
+			<div class='products-wrapper'>
+				
+			<?php while ( have_posts() ) : the_post(); ?>
+
 				<?php
-					$title = get_queried_object()->name;
-					echo '<h1 class="page-title">' . $title . '</h1>';
-					the_archive_description( '<div class="taxonomy-products-description">', '</div>' );
+					get_template_part( 'template-parts/content' );
 				?>
-			</header><!-- .page-header -->
+				
 
-			<?php /* Start the Loop */ ?>
+			<?php endwhile; ?>
 
-				<div class='products-wrapper'>
-					
-				<?php while ( have_posts() ) : the_post(); ?>
+		</div>
 
-					<?php
-						get_template_part( 'template-parts/content' );
-					?>
-					
+		<?php the_posts_navigation(); ?>
 
-				<?php endwhile; ?>
+	<?php else : ?>
 
-			</div>
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php the_posts_navigation(); ?>
+	<?php endif; ?>
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

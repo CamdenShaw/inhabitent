@@ -8,7 +8,7 @@
  /**
   * Prints HTML with meta information for the current post-date/time.
   */
- function inhabitent_posted_on() {
+function inhabitent_posted_on() {
  	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
  	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
  		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -30,7 +30,7 @@
  /**
   * Prints HTML with meta information for the post author.
   */
- function inhabitent_posted_by() {
+function inhabitent_posted_by() {
  	$byline = sprintf(
  		esc_html( 'by %s' ),
  		'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
@@ -38,12 +38,12 @@
 
  	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
- }
+}
 
  /**
   * Prints HTML with meta information for the comments with pop-up link.
   */
- function red_starter_comment_count() {
+function red_starter_comment_count() {
  	if ( is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
  		echo '<span class="comments-link">';
  		comments_popup_link( esc_html( '0 Comments' ), esc_html( '1 Comment' ), esc_html( '% Comments' ) );
@@ -54,7 +54,7 @@
 /**
 * Prints HTML with meta information for the categories and tags.
   */
- function red_starter_entry_footer() {
+function red_starter_entry_footer() {
  	// Hide category and tag text for pages.
  	if ( 'post' === get_post_type() ) {
  		/* translators: used between list items, there is a space after the comma */
@@ -100,27 +100,27 @@ function red_starter_categorized_blog() {
  		// This blog has only 1 category so red_starter_categorized_blog should return false.
  		return false;
  	}
- }
+}
 
  /**
   * Flush out the transients used in red_starter_categorized_blog.
   */
- function red_starter_category_transient_flusher() {
+function red_starter_category_transient_flusher() {
  	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
  		return;
  	}
  	// Like, beat it. Dig?
  	delete_transient( 'red_starter_categories' );
- }
- add_action( 'edit_category', 'red_starter_category_transient_flusher' );
- add_action( 'save_post',     'red_starter_category_transient_flusher' );
+}
+add_action( 'edit_category', 'red_starter_category_transient_flusher' );
+add_action( 'save_post',     'red_starter_category_transient_flusher' );
 
  /**
   * Template for comments. We have opted out of displaying pingbacks and trackbacks.
   *
   * Used as a callback by wp_list_comments() for displaying the comments.
   */
- function red_starter_comment_list( $comment, $args, $depth ) {
+function red_starter_comment_list( $comment, $args, $depth ) {
  	$GLOBALS['comment'] = $comment;
  	?>
 
@@ -165,12 +165,12 @@ function red_starter_categorized_blog() {
 
  	<?php
 
- }
+}
 
  /**
   * Display numbered post pagination instead of "Older Posts" and "Next Posts".
   */
- function red_starter_numbered_pagination() {
+function red_starter_numbered_pagination() {
  	global $wp_query;
  	$big = 999999999;
 
@@ -188,4 +188,4 @@ function red_starter_categorized_blog() {
  		);
  		echo '</nav>';
  	}
- }
+}

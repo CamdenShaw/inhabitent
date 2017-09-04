@@ -4,7 +4,6 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -83,17 +82,15 @@ body.blog div.site-content, body.error404 div.site-content {
 	}
 }
 
-#archives-2 {
-	ul {
-		margin: 0;
-		padding: 0;
-		li {
-			display: block;
-			font-family: Merriweather;
-			margin: 5px 0;
-			a {
-				text-decoration: none;
-			}
+#archives-2 ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: block;
+		font-family: Merriweather;
+		margin: 5px 0;
+		a {
+			text-decoration: none;
 		}
 	}
 }

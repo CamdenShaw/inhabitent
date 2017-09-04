@@ -54,19 +54,16 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>
 
-	<?php endif; // Check for have_comments(). ?>
-
-	<?php
+	<?php endif; // Check for have_comments().
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
-	<?php endif; ?>
-
-	<?php comment_form( array(
-		'title_reply'          => esc_html( 'Post a Comment' ),
-		'label_submit'         => esc_html( 'Submit' ),
-		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
-	) ); ?>
-
+	<?php endif;
+		comment_form( array(
+			'title_reply'          => esc_html( 'Post a Comment' ),
+			'label_submit'         => esc_html( 'Submit' ),
+			'cancel_reply_link'    => esc_html( '[Cancel reply]' )
+		) ); 
+	?>
 </div><!-- #comments -->
