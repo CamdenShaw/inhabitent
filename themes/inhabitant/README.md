@@ -22,7 +22,7 @@ You can use the site to browse hipster camping items or read gibberish that woul
 This repository contains the relevant files for the Inhabitent wordpress site.
 
 # Technologies Used in This Project
-Sass/css    wordpress   php   javascript es6    html5    google maps   svg   mamp    Akismet Anti-Spam   Contact Form 7    Custom Field Suite    Kint PHP Debugger   Show Current Template   WP Migrate DB   Red Starter Theme/Underscores
+Sass/css    wordpress   php   javascript es6  es2015    html5    google maps   svg   mamp    Akismet Anti-Spam   Contact Form 7    Custom Field Suite    Kint PHP Debugger   Show Current Template   WP Migrate DB   Red Starter Theme/Underscores    github    font-awesome
 
 # Contributors
 Camden Shaw
