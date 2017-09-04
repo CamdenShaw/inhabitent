@@ -488,8 +488,6 @@ article.type-product {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    -ms-flex-align: space-between;
-        align-items: space-between;
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap; }
     article.type-product div.text-wrapper div.dots {
@@ -543,7 +541,6 @@ body.search div.site-content #primary, body.error404 div.site-content #primary {
     display: inline;
     position: relative;
     padding: 20px 25px 0 0;
-    width: 100%;
     font-size: 2.1rem;
     background-color: transparent;
     line-height: 1;
@@ -739,7 +736,6 @@ textarea#comment {
   font-size: 1.1rem;
   margin-top: 45px; }
   .comment-form-author input, .comment-form-email input {
-    width: 100%;
     margin: 10px 0 5px;
     display: inline;
     border-radius: 0; }
@@ -748,12 +744,10 @@ textarea#comment {
 
 .comment-form-url {
   display: inline;
-  width: 100%;
   text-transform: uppercase;
   font-family: Novecentosanswide;
   font-size: 1.1rem; }
   .comment-form-url input {
-    width: 100%;
     margin: 10px 0 10px;
     display: inline;
     border-radius: 0; }
@@ -867,7 +861,7 @@ div#primary-menu {
 .menu-item-217 {
   transition: .5s;
   width: 100px;
-  padding-right: 677px; }
+  padding-right: 777px; }
   .menu-item-217 a {
     background-image: url("../../assets/images/inhabitent-logo-tent.svg");
     background-size: contain;
@@ -885,7 +879,7 @@ div#primary-menu {
 .menu-item-217-click {
   transition: 1s;
   width: 0px;
-  padding-right: 477px; }
+  padding-right: 577px; }
 
 .main-navigation {
   clear: both;
@@ -1106,7 +1100,8 @@ body.blog div.site-content, body.error404 div.site-content {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: Novecentosanswide;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0; }
     .footer-widget-area h2 i {
       color: white; }
   .footer-widget-area a:link {
@@ -1118,15 +1113,20 @@ body.blog div.site-content, body.error404 div.site-content {
     padding-right: 10px;
     font-size: 1.1rem; }
   .footer-widget-area .social {
-    margin-top: 5px; }
+    margin: 5px 0 0; }
     .footer-widget-area .social i {
       font-size: 1.5rem; }
   .footer-widget-area #text-6 {
     -ms-grid-column: 1;
         grid-column: 1; }
+    .footer-widget-area #text-6 .contact-meta, .footer-widget-area #text-6 .widget-title, .footer-widget-area #text-6 .social {
+      margin: 20px 0;
+      padding: 0; }
   .footer-widget-area #tent-biz-hours-5 {
     -ms-grid-column: 2;
         grid-column: 2; }
+    .footer-widget-area #tent-biz-hours-5 p {
+      margin: 20px 0; }
   .footer-widget-area .footer-logo {
     background-image: url("../../assets/images/inhabitent-logo-text.svg");
     -ms-grid-column: 4;
@@ -1142,13 +1142,13 @@ body.blog div.site-content, body.error404 div.site-content {
   .footer-widget-area span {
     font-weight: bold; }
 
-p.copyright {
+footer#colophon p.copyright {
   text-transform: uppercase;
   color: white;
   text-align: center;
   padding: 30px;
   margin: 0; }
-  p.copyright span {
+  footer#colophon p.copyright span {
     font-size: 0.8rem; }
 
 /*--------------------------------------------------------------
@@ -1184,12 +1184,13 @@ p.copyright {
   -ms-flex-align: center;
       align-items: center;
   width: 1120px;
-  height: 100%;
   -ms-flex-flow: row-reverse wrap-reverse;
       flex-flow: row-reverse wrap-reverse;
   -ms-flex-preferred-size: 800px;
       flex-basis: 800px;
   margin: 0 0 80px; }
+  .products-wrapper article {
+    height: 300px; }
   .products-wrapper #primary-home {
     width: 700px; }
   .products-wrapper .entry-header-post img {
@@ -1204,13 +1205,31 @@ p.copyright {
   font-size: 0.9rem;
   margin-bottom: 40px; }
 
-.post-template-default .content-area, .post-template-default .site-content, body.search div.site-content {
+.post-template-default .content-area,
+.post-template-default .site-content,
+body.search div.site-content,
+body.archive.tag div.site-content,
+body.archive.category div.site-content,
+body.date div.site-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
   width: 1120px;
   margin: auto; }
+
+body.archive.tag div.site-content h1.page-title,
+body.archive.category div.site-content h1.page-title,
+body.date div.site-content h1.page-title {
+  text-align: left;
+  border-bottom: 1px #e1e1e1 solid;
+  margin: 0;
+  padding-bottom: 20px; }
+
+body.archive.tag div.site-content article.post,
+body.archive.category div.site-content article.post,
+body.date div.site-content article.post {
+  margin: 50px 0 80px; }
 
 #primary-home {
   padding-right: 40px;
@@ -1254,7 +1273,9 @@ article.post {
   article.post div.entry-content p {
     font-family: Merriweather;
     font-size: 1rem;
-    line-height: 1.75; }
+    line-height: 1.75;
+    margin: 20px 0;
+    padding: 0; }
 
 .entry-meta {
   position: absolute;
@@ -1284,7 +1305,7 @@ div.entry-content p {
   font-weight: 100; }
 
 .read-more-link.rml {
-  width: auto; }
+  width: 156px; }
 
 .entry-footer {
   text-transform: uppercase;
@@ -1606,7 +1627,7 @@ div.words-wrapper {
       text-decoration: none; }
     .read-more-link a:visited {
       color: black; }
-  .read-more-link:hover a {
+  .read-more-link:hover a, .read-more-link:visited:hover a {
     background-color: #248A83;
     border: 1px #808080 solid;
     color: white; }
@@ -1673,9 +1694,10 @@ div.words-wrapper {
   .adventures-container .read-more-link .read-more {
     color: #fff;
     border-color: #fff;
-    background-color: none; }
-    .adventures-container .read-more-link .read-more:hover {
-      border-color: #248A83; }
+    background-color: transparent; }
+    .adventures-container .read-more-link .read-more:hover, .adventures-container .read-more-link .read-more:hover:visited {
+      border-color: #248A83;
+      background-color: #248A83; }
   .adventures-container p {
     font-size: 0.8rem; }
   .adventures-container p.more {
@@ -1737,22 +1759,21 @@ body.page-template-about div.container {
   left: 50%;
   transform: translateX(-50%); }
 
-body.page-template-about .entry-content h2 {
+.entry-content h2 {
   font-size: 2.2rem; }
 
-body.page-template-about .entry-content p {
+body.page-template-about p {
   margin: 25px 160px;
   font-size: 1rem;
   font-family: Merriweather;
   line-height: 1.75; }
-  body.page-template-about .entry-content p:last-of-type {
+  body.page-template-about p:last-of-type {
     padding-bottom: 50px; }
 
 article.page-template-about h1.entry-title {
   display: inline;
   position: absolute;
   text-align: center;
-  width: 100vw;
   min-width: 1120px; }
 
 article.page h2 {

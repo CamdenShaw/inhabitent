@@ -1,4 +1,4 @@
-# RED Starter
+# RED Starter - Inhabitent
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
@@ -8,14 +8,21 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter` directory
+![alt text](assets/images/inhabitent-logo-text-dark.svg "Welcome to the Inhabitent theme")
 
-Make sure that the theme directory name is project appropriate!
+# Inhabitent
+Is a project assigned by Red Academy.  In it we focused on learning php as well as multiple methods of using WordPress.
 
-### 3. Install the dev dependencies
+# What is Inhabitent?
+Inhabitent is a made up store that sells camping supplies and blogs about camping.  The text content uses primarily of Lorem Ipsum's Hipster Ipsum https://hipsum.co/
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+You can use the site to browse hipster camping items or read gibberish that would be blogs about camping, were this a real site.  Checkout the find us page to find the store, read about the store in the about page, browse the archives for interesting stories or peruse the shop page for needed lumber-sexual articles of clothing, tools, camping supplies, etc.
 
-### 4. Update the proxy in `gulpfile.js`
+# Project Info
+This repository contains the relevant files for the Inhabitent wordpress site.
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+# Technologies Used in This Project
+Sass/css    wordpress   php   javascript es6    html5    google maps   svg   mamp    Akismet Anti-Spam   Contact Form 7    Custom Field Suite    Kint PHP Debugger   Show Current Template   WP Migrate DB   Red Starter Theme/Underscores
+
+# Contributors
+Camden Shaw

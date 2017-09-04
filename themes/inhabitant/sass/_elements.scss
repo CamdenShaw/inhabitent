@@ -142,13 +142,11 @@ body.archive .page-header {
 	}
 }
 
-.products-wrapper {
-	p {
-		padding:0;
-		z-index: 10;
-		background-color: $color__background-body;
-		font-family: Merriweather;
-	}
+.products-wrapper p {
+	padding:0;
+	z-index: 10;
+	background-color: $color__background-body;
+	font-family: Merriweather;
 }
 
 article.type-product {
